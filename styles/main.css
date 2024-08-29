@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --bg-light-gray: rgb(211 211 211 / .25);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+.zhi-mang-xing-regular {
+    font-family: "Zhi Mang Xing", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+body div.wrapper {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100%;
+}
+
+header div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh/3);
+    gap: 64px;
+}
+
+header div.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+header .title img {
+    width: 48px;
+    height: 48px;
+}
+
+header .title h1 {
+    font-size: 48px;
+}
+
+header div.slogan {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.129px;
+}
+
+header .search form {
+    position: relative;
+}
+
+header form select {
+    appearance: none;
+    border: 0;
+    border-right: 1px solid var(--bg-light-gray);
+    border-radius: 50px 0 0 50px;
+    position: absolute;
+    top: 0;
+    left: 8px;
+    background-color: transparent;
+    padding: 16px 8px 16px 8px;
+    outline: 0;
+    cursor: pointer;
+}
+
+header input[type="search"] {
+    border: 0;
+    border-radius: 50px;
+    background-color: var(--bg-light-gray);
+    padding: 16px 16px 16px 86px;
+    width: calc(100vw - 128px);
+}
+
+header input[type="search"]:focus {
+    outline: none;
+}
+
+@media screen and (min-width: 768px) {
+    header input[type="search"] {
+        width: calc(100vw / 3);
+    }
+}

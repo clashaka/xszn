@@ -6,14 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>行书指南</title>
     <link rel="stylesheet" href="./styles/main.css">
-    <script src="./scripts/main.js" defer></script>
+    <script defer type="module" src="./scripts/main.js"></script>
 </head>
 
 <body>
-    <header></header>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <div class="title">
+                        <img src="./images/xszn.png" alt="logo">
+                        <h1 class="zhi-mang-xing-regular">行书指南</h1>
+                    </div>
+                    <div class="slogan">
+                        <p>
+                            <small>指引你工作、学习、娱乐的网址导航站</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="search">
+                    <form method="get" target="_blank" action="https://www.google.com/search">
+                        <select>
+                            <option selected>Google</option>
+                            <option>Bing</option>
+                            <option>Yahoo</option>
+                        </select>
+                        <input autofocus type="search" name="q">
+                    </form>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li>推荐</li>
+                <li>热门</li>
+                <li>最新</li>
+            </ul>
+        </nav>
+        <main></main>
+        <footer>
+            <p>
+                <small>© 2024 行书指南</small>
+            </p>
+        </footer>
+    </div>
 </body>
 
 </html>
