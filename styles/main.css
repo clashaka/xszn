@@ -37,48 +37,49 @@ body {
     height: 100%;
 }
 
-body div.wrapper {
+.wrapper {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     min-height: 100%;
 }
 
-header div.container {
+header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh/3);
+    height: calc((100vh/3) * 2);
     gap: 64px;
 }
 
-header div.title {
+header .logo .title {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
 }
 
 header .title img {
     width: 48px;
     height: 48px;
+    filter: drop-shadow(8px 8px 8px rgb(0, 166, 237, 0.25));
 }
 
 header .title h1 {
     font-size: 48px;
 }
 
-header div.slogan {
+header .logo .slogan {
     display: flex;
     justify-content: center;
-    letter-spacing: 0.129px;
+    letter-spacing: 0.47px;
+    color: #808080;
 }
 
 header .search form {
     position: relative;
 }
 
-header form select {
+header select {
     appearance: none;
     border: 0;
     border-right: 1px solid var(--bg-light-gray);
@@ -90,6 +91,7 @@ header form select {
     padding: 16px 8px 16px 8px;
     outline: 0;
     cursor: pointer;
+    color: gray;
 }
 
 header input[type="search"] {
@@ -103,6 +105,39 @@ header input[type="search"] {
 header input[type="search"]:focus {
     outline: none;
 }
+
+nav .container {
+    border-top: 1px solid var(--bg-light-gray);
+    padding: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 24px;
+}
+
+nav h2 {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.active {
+    opacity: 1;
+    font-weight: bold;
+}
+
+/* nav .content li {
+    cursor: pointer;
+    border: 1px solid var(--bg-light-gray);
+    padding: 8px 16px 8px 16px;
+    border-radius: 50px;
+} */
+
+/* nav .content li:hover {
+    border: 1px solid black;
+} */
 
 @media screen and (min-width: 768px) {
     header input[type="search"] {
