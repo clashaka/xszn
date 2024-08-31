@@ -1,0 +1,49 @@
+nav {
+    border-top: 1px solid var(--bg-light-gray);
+    display: flex;
+    width: 100vw;
+    align-items: center;
+}
+
+nav .container {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    white-space: nowrap;
+    padding: 16px;
+}
+
+nav span {
+    padding: 0;
+    border: 1px solid var(--bg-light-gray);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+nav span:hover {
+    background-color: var(--bg-light-gray);
+}
+
+nav span:active {
+    background-color: black;
+    color: white;
+}
+
+nav h2 {
+    font-size: inherit;
+    font-weight: normal;
+    border: 1px solid var(--bg-light-gray);
+    padding: 8px 16px 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+nav h2:hover {
+    background-color: var(--bg-light-gray);
+}
+
+nav h2.active {
+    background-color: black;
+    color: white;
+}

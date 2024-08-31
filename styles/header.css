@@ -1,0 +1,61 @@
+header {
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc((100vh - 16px) / 3 * 2);
+    gap: 16px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+header .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header form {
+    position: relative;
+    width: 100%;
+}
+
+header select {
+    position: absolute;
+    left: 8px;
+    padding: 16px 8px 16px 8px;
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    border-right: 1px solid var(--bg-light-gray);
+    outline: 0;
+}
+
+header input {
+    width: 100%;
+    padding: 16px 0 16px 86px;
+    background-color: var(--bg-light-gray);
+    border: 0;
+    border-radius: 32px;
+    outline: 0;
+}
+
+@media screen and (min-width: 768px) {
+    header form {
+        width: 660px;
+    }
+}

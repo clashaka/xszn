@@ -1,5 +1,9 @@
 import search from "./search.js";
-import navbar from "./navbar.js"
+import nav from "./nav.js";
+import card from "./card.js"
+import footer from "./footer.js";
 
 search();
-navbar();
+nav();
+card();
+footer();

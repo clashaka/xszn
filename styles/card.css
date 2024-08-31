@@ -1,0 +1,46 @@
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-head {
+    display: flex;
+    gap: 8px;
+}
+
+.card-head .favicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    padding: 9.5px;
+    background-color: var(--bg-light-gray);
+    border-radius: 8px;
+}
+
+.card-head img {
+    width: 32px;
+    height: 32px;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.card-title h3 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.card-title small {
+    color: gray;
+}
+
+.card-body small {
+    color: gray;
+}
