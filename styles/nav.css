@@ -1,49 +1,18 @@
-nav {
-    border-top: 1px solid var(--bg-light-gray);
+nav ul {
     display: flex;
-    width: 100vw;
-    align-items: center;
-}
-
-nav .container {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    white-space: nowrap;
-    padding: 16px;
-}
-
-nav span {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-    border: 1px solid var(--bg-light-gray);
-    border-radius: 8px;
+    gap: 24px;
+}
+
+nav li {
+    font-size: 24px;
+    font-weight: bold;
+    color: gray;
     cursor: pointer;
 }
 
-nav span:hover {
-    background-color: var(--bg-light-gray);
-}
-
-nav span:active {
-    background-color: black;
-    color: white;
-}
-
-nav h2 {
-    font-size: inherit;
-    font-weight: normal;
-    border: 1px solid var(--bg-light-gray);
-    padding: 8px 16px 8px 16px;
-    border-radius: 50px;
-    cursor: pointer;
-}
-
-nav h2:hover {
-    background-color: var(--bg-light-gray);
-}
-
-nav h2.active {
-    background-color: black;
-    color: white;
+nav .active {
+    color: black;
 }

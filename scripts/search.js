@@ -5,29 +5,24 @@ export default () => {
 
     select.addEventListener("change", () => {
         switch (select.value) {
-            case "Baidu":
+            case "baidu":
                 form.action = "https://www.baidu.com/s";
                 input.name = "wd";
                 input.focus();
                 break;
-            case "Google":
+            case "google":
                 form.action = "https://www.google.com/search";
                 input.name = "q";
                 input.focus();
                 break;
-            case "Bing":
+            case "bing":
                 form.action = "https://www.bing.com/search";
                 input.name = "q";
                 input.focus();
                 break;
-            case "Yandex":
+            default:
                 form.action = "https://yandex.com/search/";
                 input.name = "text";
-                input.focus();
-                break;
-            default:
-                form.action = "https://search.yahoo.com/search";
-                input.name = "q";
                 input.focus();
         };
     });

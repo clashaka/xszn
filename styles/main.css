@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
 @import url('./header.css');
+@import url('./nav.css');
+@import url('./footer.css');
 
 :root {
     box-sizing: border-box;
@@ -40,4 +42,5 @@ body {
     grid-template-rows: auto auto 1fr auto;
     min-height: 100%;
     padding: 16px;
+    gap: 16px;
 }

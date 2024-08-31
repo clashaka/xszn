@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <script type="module" src="./scripts/main.js"></script>
 </head>
 
 <body>
@@ -13,8 +14,15 @@
         <header>
             <div class="container">
                 <div class="logo">
-                    <img src="./images/logo.png" alt="logo" width="48">
-                    <h1 class="zhi-mang-xing-regular">行书指南</h1>
+                    <div class="title">
+                        <img src="./images/logo.png" alt="logo" width="48">
+                        <h1 class="zhi-mang-xing-regular">行书指南</h1>
+                    </div>
+                    <div class="slogan">
+                        <p>
+                            <small>是你工作、学习、娱乐的网址导航站</small>
+                        </p>
+                    </div>
                 </div>
                 <div class="search">
                     <form action="https://www.baidu.com/s" method="get" target="_blank">
@@ -24,14 +32,29 @@
                             <option value="bing">Bing</option>
                             <option value="yandex">Yandex</option>
                         </select>
-                        <input type="search" name="wd" id="">
+                        <input type="search" name="wd" id="" autofocus>
                     </form>
                 </div>
             </div>
         </header>
-        <nav>2</nav>
-        <main>3</main>
-        <footer>© 2024 行书指南</footer>
+        <nav>
+            <div class="container">
+                <ul>NAVBAR SLOT</ul>
+            </div>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="tabs">TAB SLOT</div>
+                <div class="content">TAB CONTENT SLOT</div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <p>
+                    <small>© 2023 行书指南</small>
+                </p>
+            </div>
+        </footer>
     </div>
 </body>
 

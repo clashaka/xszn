@@ -9,17 +9,35 @@ header .container {
     justify-content: center;
     width: 100%;
     height: calc((100vh - 16px) / 3 * 2);
+    border-bottom: 1px solid var(--bg-light-gray);
     gap: 16px;
 }
 
 header .logo {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+}
+
+header .title {
+    display: flex;
+}
+
+header img {
+    filter: drop-shadow(8px 8px 8px rgb(0 166 237 / .5));
 }
 
 header h1 {
     margin: 0;
     font-size: 48px;
+    cursor: default;
+}
+
+header p {
+    margin: 0;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: gray;
+    cursor: default;
 }
 
 header .search {
@@ -43,11 +61,13 @@ header select {
     border: 0;
     border-right: 1px solid var(--bg-light-gray);
     outline: 0;
+    color: gray;
+    cursor: pointer;
 }
 
 header input {
     width: 100%;
-    padding: 16px 0 16px 86px;
+    padding: 16px 16px 16px 86px;
     background-color: var(--bg-light-gray);
     border: 0;
     border-radius: 32px;

@@ -1,37 +1,33 @@
+import tab from "./tab.js";
+
 export default () => {
-    const h2 = document.querySelectorAll('nav h2');
-    const container = document.querySelector('main .container');
-    const navContainer = document.querySelector('nav .container');
 
-    const prev = document.querySelector('.prev');
-    const next = document.querySelector('.next');
 
-    prev.addEventListener('click', () => {
-        navContainer.scrollLeft -= 50;
-        console.log(navContainer.scrollLeft);
+    const keys = Object.keys(tab);
+    const ul = document.querySelector('nav ul')
 
-    })
-    next.addEventListener('click', () => {
-        navContainer.scrollLeft += 50;
-        console.log(navContainer.scrollLeft);
+    ul.textContent = ''
+    const li = document.createElement('li')
+    li.textContent = keys[0]
+    li.classList.add('active')
+    ul.appendChild(li)
 
-    })
+    function tabs(keys) {
+        for (const key in keys) {
+            const li = document.createElement('li')
+            li.textContent = key
+            ul.appendChild(li)
+        }
+    }
 
-    h2.forEach((item, index) => {
-        const div = document.createElement('div');
-        div.classList.add("panel");
-        container.appendChild(div);
-        const panel = document.querySelectorAll('main .panel');
+    tabs(tab["全部"])
+
+    const lis = document.querySelectorAll('nav li')
+
+    lis.forEach(item => {
         item.addEventListener('click', () => {
-            h2.forEach(item => {
-                item.classList.remove("active");
-            })
-            item.classList.add("active");
-
-            panel.forEach(item => {
-                item.classList.remove("active");
-            })
-            panel[index].classList.add("active");
+            lis.forEach(item => item.classList.remove('active'))
+            item.classList.add('active')
         })
     })
 }
