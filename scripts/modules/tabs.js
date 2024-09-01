@@ -1,11 +1,12 @@
-import tab from "./tab.js";
+import tab from "../url.js";
 
-export default () => {
+
+function tabs() {
 
     // console.log(tab["全部"]["享受"][0]);
     const tabs = document.querySelector('main .tabs');
 
-    tabs.textContent = ''
+    // tabs.textContent = ''
 
     for (const key in tab["全部"]) {
 
@@ -17,3 +18,5 @@ export default () => {
         }
     }
 }
+
+export { tabs };

@@ -32,11 +32,10 @@ header h1 {
     cursor: default;
 }
 
-header p {
-    margin: 0;
+header small {
     text-align: center;
     letter-spacing: 0.4px;
-    color: gray;
+    color: #d3d3d3;
     cursor: default;
 }
 

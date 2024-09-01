@@ -1,4 +1,4 @@
-import tab from "./tab.js";
+import tab from "./url.js";
 
 export default () => {
 

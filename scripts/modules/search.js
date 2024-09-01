@@ -1,4 +1,6 @@
-export default () => {
+
+
+function search() {
     const form = document.querySelector('header form');
     const select = document.querySelector('header select');
     const input = document.querySelector("header input");
@@ -27,3 +29,5 @@ export default () => {
         };
     });
 };
+
+export { search };
