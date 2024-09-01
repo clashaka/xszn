@@ -13,12 +13,12 @@ header .container {
     gap: 16px;
 }
 
-header .logo {
+header .brand {
     display: flex;
     flex-direction: column;
 }
 
-header .title {
+header .logo {
     display: flex;
 }
 
@@ -35,7 +35,7 @@ header h1 {
 header small {
     text-align: center;
     letter-spacing: 0.4px;
-    color: #d3d3d3;
+    color: lightgray;
     cursor: default;
 }
 
@@ -58,16 +58,16 @@ header select {
     appearance: none;
     background-color: transparent;
     border: 0;
-    border-right: 1px solid var(--bg-light-gray);
+    border-right: 1px solid white;
     outline: 0;
-    color: gray;
+    color: lightgray;
     cursor: pointer;
 }
 
 header input {
     width: 100%;
     padding: 16px 16px 16px 86px;
-    background-color: var(--bg-light-gray);
+    background-color: whitesmoke;
     border: 0;
     border-radius: 32px;
     outline: 0;

@@ -1,0 +1,66 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid whitesmoke;
+    border-radius: 16px;
+    padding: 16px;
+    gap: 8px;
+}
+
+.card:hover {
+    background-color: whitesmoke;
+}
+
+.card-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: whitesmoke;
+    border-radius: 16px;
+}
+
+.card figure {
+    margin: 0;
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+}
+
+.card figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 56px;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card small {
+    color: gray;
+}
+
+.card-body {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 768px) {
+    .card-body {
+        width: 100%;
+    }
+}

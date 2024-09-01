@@ -12,7 +12,3 @@ nav li {
     color: gray;
     cursor: pointer;
 }
-
-nav .active {
-    color: black;
-}

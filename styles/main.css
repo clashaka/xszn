@@ -2,10 +2,11 @@
 @import url('./header.css');
 @import url('./nav.css');
 @import url('./footer.css');
+@import url('./tab.css');
+@import url('./card.css');
 
 :root {
     box-sizing: border-box;
-    --bg-light-gray: rgb(211 211 211 / .25);
 }
 
 *,
@@ -43,4 +44,8 @@ body {
     min-height: 100%;
     padding: 16px;
     gap: 16px;
+}
+
+main .tabs {
+    display: none;
 }

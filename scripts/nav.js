@@ -1,33 +1,43 @@
-import tab from "./url.js";
+import link from "./link.js";
 
 export default () => {
 
+    const ul = document.querySelector('nav ul');
 
-    const keys = Object.keys(tab);
-    const ul = document.querySelector('nav ul')
-
-    ul.textContent = ''
-    const li = document.createElement('li')
-    li.textContent = keys[0]
-    li.classList.add('active')
-    ul.appendChild(li)
-
-    function tabs(keys) {
-        for (const key in keys) {
-            const li = document.createElement('li')
-            li.textContent = key
-            ul.appendChild(li)
-        }
+    for (const key in link) {
+        const li = document.createElement('li');
+        li.textContent = key;
+        ul.appendChild(li);
     }
 
-    tabs(tab["全部"])
+    const li = document.querySelectorAll('nav li');
+    const container = document.querySelector('main .container')
 
-    const lis = document.querySelectorAll('nav li')
 
-    lis.forEach(item => {
+
+    li.forEach((item, index) => {
+
         item.addEventListener('click', () => {
-            lis.forEach(item => item.classList.remove('active'))
-            item.classList.add('active')
+            li.forEach(e => e.style.color = 'gray');
+            item.style.color = 'black';
         })
+
+        if (index > 0) {
+            const div = document.createElement('div');
+            div.textContent = index;
+            div.classList.add('tabs')
+            container.appendChild(div);
+        }
+    })
+
+    const tabs = document.querySelectorAll('main .tabs')
+
+    li.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            tabs.forEach(e => e.style.display = 'none');
+            tabs[index].style.display = 'block';
+            console.log(index);
+        })
+
     })
 }

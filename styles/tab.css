@@ -1,0 +1,51 @@
+/* 选项卡列表未完成 */
+
+.tabs .tablist {
+    margin-bottom: 16px;
+}
+
+.tabs ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+.tabs li {
+    cursor: pointer;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid lightgray;
+    border-radius: 32px;
+}
+
+.tabs h2 {
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+li.active {
+    background-color: black;
+    color: white;
+    border: 0;
+}
+
+/* 选项卡面板未完成 */
+
+.tab-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.tab-content a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+    .tab-content {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+}

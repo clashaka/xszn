@@ -3,6 +3,6 @@ import nav from "./nav.js";
 import footer from "./footer.js";
 
 search();
-// nav();
+nav();
 tabs();
 footer();

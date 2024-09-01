@@ -1,20 +1,16 @@
-import tab from "../url.js";
-
+import link from "../link.js";
 
 function tabs() {
+    const ul = document.querySelector('.tabs ul');
 
-    // console.log(tab["全部"]["享受"][0]);
-    const tabs = document.querySelector('main .tabs');
-
-    // tabs.textContent = ''
-
-    for (const key in tab["全部"]) {
-
-        for (const value of tab["全部"][key]) {
-            console.log(value);
-            const h2 = document.createElement('h2')
-            h2.textContent = value
-            tabs.appendChild(h2)
+    for (const key in link) {
+        const value = link[key]
+        for (const key in value) {
+            const li = document.createElement('li');
+            const h2 = document.createElement('h2');
+            h2.textContent = key;
+            ul.appendChild(li);
+            li.appendChild(h2);
         }
     }
 }
