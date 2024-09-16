@@ -33,6 +33,10 @@ li.active {
 
 /* 选项卡面板未完成 */
 
+.tab-container {
+    display: none;
+}
+
 .tab-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
