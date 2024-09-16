@@ -1,6 +1,6 @@
 export default {
     "生产": {
-        "图片": [
+        "文档": [
             {
                 url: "https://ygpy.net/",
                 title: "一个朋友",
@@ -16,7 +16,7 @@ export default {
                 tag: "免费机场"
             },
         ],
-        "文字": [
+        "图片": [
             {
                 url: "https://google.com/",
                 title: "Google",
@@ -24,10 +24,12 @@ export default {
                 icon: "https://ygpy.net/images/icon/google.ico",
                 tag: "搜索引擎"
             }
-        ]
+        ],
+        "音频": [],
+        "视频": []
     },
     "提升": {
-        "外语": [
+        "A I": [
             {
                 url: "https://zh.wikipedia.org/",
                 title: "维基百科",
@@ -36,10 +38,12 @@ export default {
                 tag: "百科全书"
             }
         ],
-        "编程": []
+        "技能": [],
+        "科学": [],
+        "语言": []
     },
     "享受": {
-        "音乐": [
+        "小说": [
             {
                 url: "https://open.spotify.com/",
                 title: "Spotify",
@@ -48,9 +52,9 @@ export default {
                 tag: "在线音乐"
             }
         ],
-        "电影": [],
-        "小说": [],
-        "漫画": [
+        "漫画": [],
+        "音乐": [],
+        "电影": [
             {
                 url: "https://open.spotify.com/",
                 title: "Spotify",
