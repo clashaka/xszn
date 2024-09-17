@@ -10,3 +10,13 @@ tabs();
 card();
 footer();
 theme();
+
+
+// nav 各容器同高
+const tabss = document.querySelector('.tabs');
+const tabslist = document.querySelectorAll('.tabs');
+console.dir(tabss.clientHeight);
+
+tabslist.forEach(item=>{
+    item.style.height = `${tabss.clientHeight}px`;
+})

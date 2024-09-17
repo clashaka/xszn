@@ -95,20 +95,6 @@ export default {
                 desc: "提供广泛的计算机科学教育资源",
                 icon: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_favicon.png",
                 tag: "计算机科学"
-            },
-            {
-                url: "https://www.geeksforgeeks.org/",
-                title: "GeeksforGeeks",
-                desc: "提供广泛的计算机科学教育资源",
-                icon: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_favicon.png",
-                tag: "计算机科学"
-            },
-            {
-                url: "https://www.geeksforgeeks.org/",
-                title: "GeeksforGeeks",
-                desc: "提供广泛的计算机科学教育资源",
-                icon: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_favicon.png",
-                tag: "计算机科学"
             }
         ],
         "科学": [],
