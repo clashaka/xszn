@@ -4,7 +4,6 @@
 @import url('./footer.css');
 @import url('./tab.css');
 @import url('./card.css');
-@import url('./theme.css');
 
 :root {
     box-sizing: border-box;
