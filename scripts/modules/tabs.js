@@ -1,62 +1,35 @@
 import link from "../link.js";
 
 function tabs() {
-
     const tabs = document.querySelectorAll('.tabs');
+
+    const linkArr = [];
+    for (const key in link) {
+        linkArr.push(key);
+    }
 
     tabs.forEach((item, index) => {
 
+        // 根据 Nav 除推荐生成 Tabs Content Dom
         if (index > 0) {
-            const tablist = document.createElement('div');
-            const ul = document.createElement('ul');
-
             const tabpanel = document.createElement('div');
+            const tabcontent = document.createElement('div');
 
-            tabpanel.classList.add('tabpanel');
-
-            tablist.classList.add('tablist');
-            item.appendChild(tablist);
             item.appendChild(tabpanel)
-
-            tablist.appendChild(ul);
-
-            const test = Object.keys(link);
-
-            const key = test[index - 1];
-
-            const values = link[key];
-
-            const test2 = Object.keys(values);
-
-            for (const key in values) {
-                const li = document.createElement('li');
-                const h2 = document.createElement('h2');
-
-                h2.textContent = key;
-                ul.appendChild(li);
-                li.appendChild(h2);
-                const tabcontainer = document.createElement('div');
-                const tabcontent = document.createElement('div');
-                tabcontainer.classList.add('tab-container');
-                tabcontent.classList.add('tab-content');
-                tabpanel.appendChild(tabcontainer);
-                tabcontainer.appendChild(tabcontent);
-            }
-
+            tabpanel.classList.add('tabpanel');
+            tabcontent.classList.add('tab-content');
+            tabpanel.appendChild(tabcontent);
         }
-    })
 
-    const tabContent = document.querySelectorAll('.tabpanel .tab-content');
+        // 遍历 link 中的数据到 Tabs Content Dom
 
-    let step = 0;
+        const value = linkArr[index - 1];
+        const values = link[value];
 
-    for (const key in link) {
-
-        const value = link[key];
-        for (const key in value) {
-            step++;
-            const values = value[key];
-            for (const item of values) {
+        // is.Array 判断一个值是否是数组，返回布尔值
+        if (values && Array.isArray(values)) {
+            const tabContent = document.querySelectorAll('.tabpanel .tab-content');
+            values.forEach((item) => {
                 const a = document.createElement('a');
                 a.href = item.url;
                 a.target = '_blank';
@@ -76,30 +49,8 @@ function tabs() {
                             </div>
                         </div>
                         `;
-                tabContent[step].appendChild(a);
-            }
-        }
-    }
-
-    tabs.forEach((item, index) => {
-        if (index > 0) {
-            const li = item.querySelectorAll('li');
-            const tabcontainer = item.querySelectorAll('.tab-container');
-
-            li[0].classList.add('active');
-
-            tabcontainer[0].style.display = 'block';
-
-            li.forEach((item, index) => {
-
-                item.addEventListener('click', () => {
-                    li.forEach(e => e.classList.remove('active'));
-                    item.classList.add('active');
-                    tabcontainer.forEach(e => e.style.display = 'none');
-                    tabcontainer[index].style.display = 'block';
-                })
-            })
-
+                tabContent[index].appendChild(a);
+            });
         }
     })
 }

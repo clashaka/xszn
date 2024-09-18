@@ -1,33 +1,43 @@
 import link from "./link.js";
 
 export default () => {
+    // 在推荐页生成 Tabs
+
     const tabContent = document.querySelector('.tabpanel .tab-content');
-    // console.log(link["生产"]["图片"][0].desc);
+
+    let linkArr = [];
+
     for (const key in link) {
-        const values = link[key]
-        for (const value in values) {
-            values[value].forEach(item => {
-                const a = document.createElement('a');
-                a.href = item.url;
-                a.target = '_blank';
-                a.innerHTML = `
+        const values = link[key];
+        for (const value of values) {
+            linkArr.push(value);
+        }
+    }
+
+    while (linkArr.length > 0) {
+        const random = Math.floor(Math.random() * linkArr.length);
+
+        const a = document.createElement('a');
+        a.href = linkArr[random].url;
+        a.target = '_blank';
+        a.innerHTML = `
                     <div class="card">
                         <figure class="card-head">
                             <div class="card-icon">
-                                <img src="${item.icon}" alt="${item.title}" width="43" height="43">
+                                <img src="${linkArr[random].icon}" alt="${linkArr[random].title}" width="43" height="43">
                             </div>
                             <figcaption>
-                                <p>${item.title}</p>
-                                <small>${item.tag}</small>
+                                <p>${linkArr[random].title}</p>
+                                <small>${linkArr[random].tag}</small>
                             </figcaption>
                         </figure>
                         <div class="card-body">
-                            <small>${item.desc}</small>
+                            <small>${linkArr[random].desc}</small>
                         </div>
                     </div>
                     `;
-                tabContent.appendChild(a);
-            })
-        }
+        tabContent.appendChild(a);
+        linkArr.splice(random, 1)
     }
+
 }
