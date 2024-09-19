@@ -3,7 +3,6 @@ import link from "./link.js";
 export default () => {
 
     // 遍历导航
-
     const ul = document.querySelector('nav ul');
 
     for (const key in link) {
@@ -16,11 +15,10 @@ export default () => {
     const container = document.querySelector('main .container')
 
     // 选项卡列表高亮、追加选项卡面板
-
     li.forEach((item, index) => {
 
         item.addEventListener('click', () => {
-            li.forEach(e => e.style.color = 'gray');
+            li.forEach(item => item.style.color = 'darkgray');
             item.style.color = 'black';
         })
 
@@ -32,7 +30,6 @@ export default () => {
     })
 
     // 选项卡面板显示
-
     const tabs = document.querySelectorAll('main .tabs')
 
     li.forEach((item, index) => {

@@ -5,28 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .wrap {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
 </head>
 
 <body>
-    <script>
-        const obj = [
-            {
-                url: "https://www.baidu.com",
-            },
-            {
-                url: "https://www.google.com",
-            }
-        ]
-        let arr = []
+    <div class="container">
+        <div class="wrap">
 
-        for (const value of obj) {
-            arr.push(value)
-        }
-
-        console.log(arr);
-
-
-    </script>
+            <p>这个世界都是我的</p>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -13,51 +13,38 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <div class="container">
-                <div class="brand">
-                    <div class="logo">
-                        <img src="./images/logo.webp" alt="Logo" width="48">
-                        <h1 class="zhi-mang-xing-regular">行书指南</h1>
-                    </div>
-                    <div class="slogan">
-                        <small>是你工作、学习、娱乐的网址导航站</small>
-                    </div>
-                </div>
-                <div class="search">
-                    <form action="https://www.baidu.com/s" method="get" target="_blank">
-                        <select>
-                            <option value="baidu" selected>Baidu</option>
-                            <option value="google">Google</option>
-                            <option value="bing">Bing</option>
-                            <option value="yandex">Yandex</option>
-                        </select>
-                        <input type="search" name="wd" autofocus>
-                    </form>
-                </div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./images/logo.webp" alt="Logo">
+                <h1 class="zhi-mang-xing-regular">行书指南</h1>
             </div>
-        </header>
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <select>
+                    <option value="baidu">Baidu</option>
+                    <option value="google">Google</option>
+                    <option value="bing">Bing</option>
+                    <option value="yandex">Yandex</option>
+                </select>
+                <input type="search" name="wd" autofocus>
+            </form>
+        </div>
+    </header>
+    <div class="container">
         <nav>
-            <div class="container">
-                <ul>
-                    <li style="color: black;">推荐</li>
-                </ul>
-            </div>
+            <ul>
+                <li class="nav-item">推荐</li>
+            </ul>
         </nav>
         <main>
             <div class="container">
-                <div class="tabs" style="display: block;">
-                    <div class="tabpanel">
-                        <div class="tab-content"></div>
-                    </div>
+                <div class="tabs">
+                    <div class="tab-content"></div>
                 </div>
             </div>
         </main>
         <footer>
-            <div class="container">
-                <small>© 2023 行书指南</small>
-            </div>
+            <p><small>© 2023 行书指南</small></p>
         </footer>
     </div>
 </body>

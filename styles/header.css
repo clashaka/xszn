@@ -1,5 +1,5 @@
 header {
-    width: 100%;
+    border-bottom: 1px solid whitesmoke;
 }
 
 header .container {
@@ -7,22 +7,18 @@ header .container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: calc((100vh - 16px) / 3 * 2);
-    border-bottom: 1px solid var(--bg-light-gray);
+    height: calc((100vh / 3) * 2);
     gap: 16px;
-}
-
-header .brand {
-    display: flex;
-    flex-direction: column;
+    border-bottom: 1px solid var(--bg-light-gray);
 }
 
 header .logo {
     display: flex;
+    height: 48px;
 }
 
 header img {
+    height: 100%;
     filter: drop-shadow(8px 8px 8px rgb(0 166 237 / .5));
 }
 
@@ -32,45 +28,34 @@ header h1 {
     cursor: default;
 }
 
-header small {
-    text-align: center;
-    letter-spacing: 0.4px;
-    color: lightgray;
-    cursor: default;
-}
-
-header .search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
 header form {
     position: relative;
     width: 100%;
+    height: 48px;
 }
 
 header select {
     position: absolute;
     left: 8px;
-    padding: 16px 8px 16px 8px;
     appearance: none;
-    background-color: transparent;
+    padding: 0 8px 0 8px;
     border: 0;
-    border-right: 1px solid white;
+    background-color: transparent;
     outline: 0;
-    color: lightgray;
+    border-right: 1px solid white;
+    color: darkgray;
     cursor: pointer;
+    height: 100%;
 }
 
 header input {
-    width: 100%;
-    padding: 16px 16px 16px 86px;
+    padding: 0 16px 0 86px;
     background-color: whitesmoke;
     border: 0;
     border-radius: 32px;
     outline: 0;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (min-width: 768px) {

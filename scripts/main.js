@@ -1,18 +1,17 @@
-import { search, tabs } from "./header.js";
+import { search } from "./header.js";
 import nav from "./nav.js";
 import footer from "./footer.js";
-import card from "./card.js";
+import tab from "./tab.js";
 
 search();
 nav();
-tabs();
-card();
+tab();
 footer();
 
 // nav 各容器同高
 const tabss = document.querySelector('.tabs');
 const tabslist = document.querySelectorAll('.tabs');
 
-tabslist.forEach(item=>{
+tabslist.forEach(item => {
     item.style.height = `${tabss.clientHeight}px`;
 })
