@@ -15,3 +15,14 @@ const tabslist = document.querySelectorAll('.tabs');
 tabslist.forEach(item => {
     item.style.height = `${tabss.clientHeight}px`;
 })
+
+const html = document.querySelector('html');
+
+if (localStorage.getItem('theme') === 'dark') {
+    document.documentElement.classList.toggle('dark');
+}
+
+document.getElementById('theme-toggle').addEventListener('click', function (e) {
+    document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', html.classList);
+});

@@ -1,32 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>主题控制器示例</title>
     <style>
-        .container {
-            width: 100px;
-            height: 100px;
-            background-color: red;
+        :root {
+            --bg-color: #ffffff;
+            /* 默认背景色 */
+            --text-color: #000000;
+            /* 默认文本颜色 */
+            --link-color: #007bff;
+            /* 默认链接颜色 */
         }
 
-        .wrap {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        a {
+            color: var(--link-color);
+        }
+
+        /* 深色主题 */
+        .dark {
+            --bg-color: #000000;
+            --text-color: #ffffff;
+            --link-color: #ff5722;
+            /* 深色模式下链接颜色 */
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="wrap">
-
-            <p>这个世界都是我的</p>
-        </div>
+        <h1>欢迎使用主题控制器</h1>
+        <button id="theme-toggle">切换主题</button>
+        <p>这是一个示例文本。</p>
+        <a href="#">这是一个链接</a>
     </div>
+
+    <script>
+        document.getElementById('theme-toggle').addEventListener('click', function () {
+            document.documentElement.classList.toggle('dark');
+        });
+    </script>
 </body>
 
 </html>

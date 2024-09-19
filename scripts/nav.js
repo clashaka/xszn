@@ -19,7 +19,7 @@ export default () => {
 
         item.addEventListener('click', () => {
             li.forEach(item => item.style.color = 'darkgray');
-            item.style.color = 'black';
+            item.style.color = 'var(--text-color)';
         })
 
         if (index > 0) {

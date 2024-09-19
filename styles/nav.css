@@ -7,7 +7,7 @@ nav ul {
 }
 
 nav li:nth-child(1) {
-    color: black;
+    color: var(--text-color);
 }
 
 nav li {

@@ -8,6 +8,11 @@
 :root {
     box-sizing: border-box;
     --container-padding: 16px;
+    /* 主题控制器样式 */
+    --bg-color: white;
+    --card-bg-color: white;
+    --text-color: black;
+    --border-color: whitesmoke;
 }
 
 *,
@@ -34,9 +39,32 @@ html {
     height: 100%;
 }
 
+html[data-theme="dark"] {
+    --bg-color: #191919;
+    --card-bg-color: #333333;
+    --text-color: whitesmoke;
+    --border-color: #333333;
+}
+
+.dark {
+    --bg-color: #191919;
+    --card-bg-color: #333333;
+    --text-color: whitesmoke;
+    --border-color: #333333;
+}
+
 body {
     margin: 0;
     height: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.theme {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 16px;
 }
 
 .container {
