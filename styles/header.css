@@ -2,6 +2,21 @@ header {
     border-bottom: 1px solid var(--border-color);
 }
 
+header .theme {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 16px;
+}
+
+header svg {
+    cursor: pointer;
+}
+
+header #dark {
+    display: none;
+}
+
 header .container {
     display: flex;
     flex-direction: column;

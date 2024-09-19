@@ -1,7 +1,6 @@
 import link from "./link.js";
 
 export default () => {
-
     // 遍历导航
     const ul = document.querySelector('nav ul');
 
@@ -34,9 +33,8 @@ export default () => {
 
     li.forEach((item, index) => {
         item.addEventListener('click', () => {
-            tabs.forEach(e => e.style.display = 'none');
+            tabs.forEach(item => item.style.display = 'none');
             tabs[index].style.display = 'block';
         })
-
     })
 }

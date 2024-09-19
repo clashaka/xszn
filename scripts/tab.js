@@ -87,4 +87,11 @@ export default function tab() {
             });
         }
     })
+
+    // Tabs 各容器同高
+    const tabOne = document.querySelector('.tabs:nth-child(1)');
+
+    tabs.forEach(item => {
+        item.style.height = `${tabOne.clientHeight}px`;
+    })
 }

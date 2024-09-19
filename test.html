@@ -1,51 +1,27 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>主题控制器示例</title>
+    <title>Document</title>
     <style>
-        :root {
-            --bg-color: #ffffff;
-            /* 默认背景色 */
-            --text-color: #000000;
-            /* 默认文本颜色 */
-            --link-color: #007bff;
-            /* 默认链接颜色 */
-        }
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-        }
-
-        a {
-            color: var(--link-color);
-        }
-
-        /* 深色主题 */
-        .dark {
-            --bg-color: #000000;
-            --text-color: #ffffff;
-            --link-color: #ff5722;
-            /* 深色模式下链接颜色 */
-        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>欢迎使用主题控制器</h1>
-        <button id="theme-toggle">切换主题</button>
-        <p>这是一个示例文本。</p>
-        <a href="#">这是一个链接</a>
-    </div>
 
     <script>
-        document.getElementById('theme-toggle').addEventListener('click', function () {
-            document.documentElement.classList.toggle('dark');
-        });
+        console.log('hello world');
+
+        async function test() {
+            const response = await fetch('./data/link.json');
+            const data = await response.json();
+            console.log(data);
+        }
+
+        test();
     </script>
 </body>
 
