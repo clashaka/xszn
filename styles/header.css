@@ -65,7 +65,7 @@ header select {
 
 header input {
     padding: 0 16px 0 86px;
-    background-color: whitesmoke;
+    background-color: var(--search-bg-color);
     border: 0;
     border-radius: 32px;
     outline: 0;
