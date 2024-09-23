@@ -61,8 +61,6 @@ body {
 
 main .container {
     min-height: 100%;
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
     padding-left: 0;
     padding-right: 0;
 }

@@ -43,6 +43,15 @@ header h1 {
     cursor: default;
 }
 
+header .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    width: 100%;
+    top: 16px;
+}
+
 header form {
     position: relative;
     width: 100%;
