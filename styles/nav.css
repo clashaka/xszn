@@ -1,5 +1,10 @@
+nav {
+    padding: 16px;
+}
+
 nav ul {
     display: flex;
+    justify-content: space-between;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -11,8 +16,18 @@ nav li:nth-child(1) {
 }
 
 nav li {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     color: darkgray;
     cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    nav li {
+        font-size: 32px;
+    }
+
+    nav ul {
+        justify-content: inherit;
+    }
 }

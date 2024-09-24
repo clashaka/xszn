@@ -2,18 +2,18 @@
 @import url('./header.css');
 @import url('./nav.css');
 @import url('./footer.css');
-@import url('./tab.css');
-@import url('./card.css');
+@import url('./components/tab.css');
+@import url('./components/card.css');
 
 :root {
     box-sizing: border-box;
     --container-padding: 16px;
     /* 主题控制器样式 */
-    --bg-color: white;
+    --bg-color: whitesmoke;
     --card-bg-color: white;
     --text-color: black;
     --border-color: whitesmoke;
-    --search-bg-color: whitesmoke;
+    --search-bg-color: rgb(255, 255, 255);
 }
 
 *,
@@ -61,8 +61,9 @@ body {
 
 main .container {
     min-height: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    /* padding-left: 0;
+    padding-right: 0; */
+    padding-top: inherit;
 }
 
 main .tabs {
