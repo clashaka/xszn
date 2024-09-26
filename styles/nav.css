@@ -17,6 +17,7 @@ nav li {
     color: var(--neutral-color);
     cursor: pointer;
     transition: border-bottom .3s ease-in-out;
+    border-bottom: 5px solid transparent;
 }
 
 nav li:nth-child(1) {
