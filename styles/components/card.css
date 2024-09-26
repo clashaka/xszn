@@ -1,22 +1,38 @@
 .card {
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--border-color);
+    position: relative;
+    border: 2px solid var(--border-color);
     border-radius: 16px;
     padding: 16px;
     gap: 8px;
+    transition: all .3s ease-in-out;
 }
 
 .card:hover {
     background-color: var(--border-color);
 }
 
-.card figure {
-    margin: 0;
+.card .vpn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 12px;
+    background-color: var(--bg-color);
+    color: var(--bg-color);
+    padding: 8px;
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+}
+
+.card:hover .vpn {
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .card-head {
     display: flex;
+    margin: inherit;
     gap: 8px;
 }
 
@@ -26,7 +42,7 @@
     justify-content: center;
     width: 56px;
     height: 56px;
-    background-color: var(--card-bg-color);
+    background-color: var(--icon-bg-color);
     border-radius: 16px;
 }
 
@@ -44,21 +60,18 @@
 }
 
 .card h3 {
-    margin: 0;
+    margin: inherit;
     font-size: 16px;
     font-weight: normal;
     color: var(--text-color);
-}
-
-.card p {
-    margin: 0;
 }
 
 .card small {
     color: gray;
 }
 
-.card-body p {
+.card-body small {
+    display: block;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;

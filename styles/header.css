@@ -1,6 +1,5 @@
 header {
     position: relative;
-    border-bottom: 1px solid var(--border-color);
 }
 
 header .theme {
@@ -18,7 +17,8 @@ header .container {
     justify-content: center;
     height: calc((100vh / 3) * 2);
     gap: 16px;
-    border-bottom: 1px solid var(--bg-light-gray);
+    border-bottom: 1.5px solid var(--border-color);
+    padding: 0 16px 0 16px;
 }
 
 header .logo {
@@ -43,25 +43,26 @@ header .search {
     justify-content: center;
     position: sticky;
     width: 100%;
+    height: 48px;
     top: 16px;
 }
 
 header form {
     position: relative;
     width: 100%;
-    height: 48px;
+    height: 100%;
 }
 
 header select {
     position: absolute;
     left: 8px;
     appearance: none;
+    border: inherit;
+    border-right: 1px solid var(--select-border-color);
+    outline: inherit;
     padding: 0 8px 0 8px;
-    border: 0;
     background-color: transparent;
-    outline: 0;
-    border-right: 1px solid white;
-    color: darkgray;
+    color: var(--neutral-color);
     cursor: pointer;
     height: 100%;
 }
@@ -69,12 +70,12 @@ header select {
 header input {
     padding: 0 16px 0 86px;
     background-color: var(--search-bg-color);
-    border: 0;
+    border: inherit;
     border-radius: 32px;
-    box-shadow: 0 0 8px rgb(0 0 0 / .1);
-    outline: 0;
+    outline: inherit;
     width: 100%;
     height: 100%;
+    color: var(--text-color);
 }
 
 @media screen and (min-width: 768px) {

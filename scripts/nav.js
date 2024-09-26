@@ -13,14 +13,18 @@ export default () => {
         }
 
         const li = document.querySelectorAll('nav li');
-        const container = document.querySelector('main .container')
+        const container = document.querySelector('main')
 
         // 选项卡列表高亮、追加选项卡面板
         li.forEach((item, index) => {
 
             item.addEventListener('click', () => {
-                li.forEach(item => item.style.color = 'darkgray');
+                li.forEach(item => {
+                    item.style.color = 'var(--neutral-color)';
+                    item.style.borderBottom = '5px solid transparent';
+                });
                 item.style.color = 'var(--text-color)';
+                item.style.borderBottom = '5px solid var(--text-color)';
             })
 
             if (index > 0) {

@@ -55,7 +55,8 @@
             "title": "Fast",
             "desc": "Netflix 的网速测试工具",
             "icon": "https://fast.com/assets/favicons/favicon-96x96.png",
-            "key": "网络工具"
+            "key": "网络工具",
+            "vpn": true
         }
     ],
     "提升": [
@@ -64,35 +65,40 @@
             "title": "ChatGPT",
             "desc": "是 OpenAI 开发的能与人类自然语言交流、功能多样（可查询信息、模拟对话等）但并非完美无误的智能语言模型。",
             "icon": "https://chatgpt.com/favicon.ico",
-            "key": "语言模型"
+            "key": "语言模型",
+            "vpn": true
         },
         {
             "url": "https://claude.ai/",
             "title": "Claude",
             "desc": "ChatGPT 的竞争对手。",
             "icon": "https://claude.ai/favicon.ico",
-            "key": "语言模型"
+            "key": "语言模型",
+            "vpn": true
         },
         {
             "url": "https://www.perplexity.ai/",
             "title": "Perplexity",
             "desc": "AI 搜索引擎。",
             "icon": "https://www.perplexity.ai/favicon.ico",
-            "key": "搜索引擎"
+            "key": "搜索引擎",
+            "vpn": true
         },
         {
             "url": "https://copilot.microsoft.com/",
             "title": "Copilot",
             "desc": "微软的 AI 助手。",
             "icon": "https://copilot.microsoft.com/sa/simg/favicon-cplt.ico",
-            "key": "语言模型"
+            "key": "语言模型",
+            "vpn": true
         },
         {
             "url": "https://poe.com/",
             "title": "Poe",
             "desc": "一系列官方机器人和用户专属机器人，涵盖了从编程、数据分析、图像生成到教学规划等多个领域的应用，以及对应的技术支持和使用限制。",
             "icon": "https://psc2.cf2.poecdn.net/assets/apple-touch-icon.png",
-            "key": "AI 集合"
+            "key": "AI 集合",
+            "vpn": true
         },
         {
             "url": "https://www.deepl.com/",

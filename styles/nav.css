@@ -6,20 +6,22 @@ nav ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: inherit;
+    padding: unset;
     gap: 24px;
-}
-
-nav li:nth-child(1) {
-    color: var(--text-color);
 }
 
 nav li {
     font-size: 24px;
     font-weight: bold;
-    color: darkgray;
+    color: var(--neutral-color);
     cursor: pointer;
+    transition: border-bottom .3s ease-in-out;
+}
+
+nav li:nth-child(1) {
+    color: var(--text-color);
+    border-bottom: 5px solid var(--text-color);
 }
 
 @media screen and (min-width: 768px) {

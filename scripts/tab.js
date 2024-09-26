@@ -32,17 +32,18 @@ export default function tab() {
             a.target = '_blank';
             a.innerHTML = `
                     <div class="card">
+                        <small class="vpn">${recommend[random].vpn ? 'VPN' : ''}</small>
                         <figure class="card-head">
                             <div class="card-icon">
                                 <img src="${recommend[random].icon}" alt="${recommend[random].title}" width="43" height="43">
                             </div>
                             <figcaption>
                                 <h3>${recommend[random].title}</h3>
-                                <p><small>${recommend[random].key}</small></p>
+                                <small>${recommend[random].key}</small>
                             </figcaption>
                         </figure>
                         <div class="card-body">
-                            <p><small>${recommend[random].desc}</small></p>
+                            <small>${recommend[random].desc}</small>
                         </div>
                     </div>
                     `;
@@ -79,11 +80,11 @@ export default function tab() {
                                 </div>
                                 <figcaption>
                                     <h3>${item.title}</h3>
-                                    <p><small>${item.key}</small><p>
+                                    <small>${item.key}</small>
                                 </figcaption>
                             </figure>
                             <div class="card-body">
-                                <p><small>${item.desc}</small><p>
+                                <small>${item.desc}</small>
                             </div>
                         </div>
                 `;
@@ -97,6 +98,14 @@ export default function tab() {
 
         tabs.forEach(item => {
             item.style.height = `${tabOne.clientHeight}px`;
+        })
+
+        // 清楚无vpn值
+        const vpn = document.querySelectorAll('.vpn');
+        vpn.forEach(item => {
+            if (!item.textContent) {
+                item.remove();
+            }
         })
     }
 

@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
 @import url('./header.css');
 @import url('./nav.css');
-@import url('./footer.css');
 @import url('./components/tab.css');
 @import url('./components/card.css');
+@import url('./footer.css');
 
 :root {
     box-sizing: border-box;
-    --container-padding: 16px;
-    /* 主题控制器样式 */
     --bg-color: whitesmoke;
-    --card-bg-color: white;
-    --text-color: black;
-    --border-color: whitesmoke;
-    --search-bg-color: rgb(255, 255, 255);
+    --text-color: #191919;
+    --search-bg-color: white;
+    --select-border-color: whitesmoke;
+    --border-color: white;
+    --icon-bg-color: white;
+    --neutral-color: lightgray;
 }
 
 *,
@@ -42,28 +42,23 @@ html {
 
 html[data-theme="dark"] {
     --bg-color: #191919;
-    --card-bg-color: #333333;
     --text-color: whitesmoke;
-    --border-color: #333333;
-    --search-bg-color: whitesmoke;
+    --search-bg-color: black;
+    --select-border-color: #191919;
+    --border-color: black;
+    --icon-bg-color: black;
+    --neutral-color: gray;
 }
 
 body {
-    margin: 0;
+    margin: inherit;
     height: 100%;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
 
-.container {
-    padding: var(--container-padding);
-}
-
-main .container {
-    min-height: 100%;
-    /* padding-left: 0;
-    padding-right: 0; */
-    padding-top: inherit;
+main {
+    padding: 0 16px 0 16px;
 }
 
 main .tabs {
