@@ -6,10 +6,12 @@ export default () => {
         // 遍历导航
         const ul = document.querySelector('nav ul');
 
-        for (const key in link) {
-            const li = document.createElement('li');
-            li.textContent = key;
-            ul.appendChild(li);
+        for (const obj of link) {
+            for (const key in obj) {
+                const li = document.createElement('li');
+                li.textContent = key;
+                ul.appendChild(li);
+            }
         }
 
         const li = document.querySelectorAll('nav li');

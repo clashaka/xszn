@@ -4,7 +4,7 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style-type: none;
     margin: inherit;
     padding: unset;
@@ -13,6 +13,9 @@ nav ul {
 
 nav li {
     font-size: 24px;
+    padding-bottom: 8px;
+    width: 100%;
+    text-align: center;
     font-weight: bold;
     color: var(--neutral-color);
     cursor: pointer;
@@ -28,6 +31,7 @@ nav li:nth-child(1) {
 @media screen and (min-width: 768px) {
     nav li {
         font-size: 32px;
+        width: inherit;
     }
 
     nav ul {

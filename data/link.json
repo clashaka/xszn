@@ -1,134 +1,346 @@
-{
-    "搜集": [],
-    "生产": [
-        {
-            "url": "https://www.ilovepdf.com/zh-cn",
-            "title": "iLovePDF",
-            "desc": "完全免费、易于使用、丰富的 PDF 处理工具",
-            "icon": "./images/icon/ilovepdf.png",
-            "key": "在线工具"
-        },
-        {
-            "url": "https://www.remove.bg/zh",
-            "title": "Remove.bg",
-            "desc": "上传图片一键自动抠图",
-            "icon": "https://www.remove.bg/favicon.ico",
-            "key": "在线抠图"
-        },
-        {
-            "url": "https://www.canva.com/",
-            "title": "Canva",
-            "desc": "一系列快速创建设计项目的模板，包括视频缩略图、Logo、文档、白板、演示文稿和网站等，并展示了用户最近的设计作品。",
-            "icon": "https://static.canva.com/static/images/favicon.ico",
-            "key": "在线设计"
-        },
-        {
-            "url": "https://clipchamp.com/zh-hans/",
-            "title": "Clipchamp",
-            "desc": "提供全面的视频编辑解决方案，包括智能工具如自动辅助字幕、文本转语音、视频大小调整、演讲者指导和自动撰写，以及无水印无限制的视频创作功能，适用于创作者、企业和教育工作者，可在浏览器、桌面和移动应用上使用。",
-            "icon": "https://clipchamp.com/icons/icon-144x144.png",
-            "key": "视频编辑"
-        },
-        {
-            "url": "https://temp-mail.org/zh/",
-            "title": "Temp Mail",
-            "desc": "一次性临时电子邮件服务",
-            "icon": "https://temp-mail.org/favicon.ico",
-            "key": "电子邮箱"
-        },
-        {
-            "url": "https://ygpy.net/",
-            "title": "一个朋友",
-            "desc": "一个免费 VPN 机场推荐网站",
-            "icon": "https://ygpy.net/favicon.ico",
-            "key": "信息聚合"
-        },
-        {
-            "url": "https://www.speedtest.net/zh-Hans",
-            "title": "Speedtest",
-            "desc": "一个广泛使用的网络测速工具",
-            "icon": "https://www.speedtest.net/favicon.ico",
-            "key": "网络工具"
-        },
-        {
-            "url": "https://fast.com/",
-            "title": "Fast",
-            "desc": "Netflix 的网速测试工具",
-            "icon": "https://fast.com/assets/favicons/favicon-96x96.png",
-            "key": "网络工具",
-            "vpn": true
-        }
-    ],
-    "提升": [
-        {
-            "url": "https://chatgpt.com/",
-            "title": "ChatGPT",
-            "desc": "是 OpenAI 开发的能与人类自然语言交流、功能多样（可查询信息、模拟对话等）但并非完美无误的智能语言模型。",
-            "icon": "https://chatgpt.com/favicon.ico",
-            "key": "语言模型",
-            "vpn": true
-        },
-        {
-            "url": "https://claude.ai/",
-            "title": "Claude",
-            "desc": "ChatGPT 的竞争对手。",
-            "icon": "https://claude.ai/favicon.ico",
-            "key": "语言模型",
-            "vpn": true
-        },
-        {
-            "url": "https://www.perplexity.ai/",
-            "title": "Perplexity",
-            "desc": "AI 搜索引擎。",
-            "icon": "https://www.perplexity.ai/favicon.ico",
-            "key": "搜索引擎",
-            "vpn": true
-        },
-        {
-            "url": "https://copilot.microsoft.com/",
-            "title": "Copilot",
-            "desc": "微软的 AI 助手。",
-            "icon": "https://copilot.microsoft.com/sa/simg/favicon-cplt.ico",
-            "key": "语言模型",
-            "vpn": true
-        },
-        {
-            "url": "https://poe.com/",
-            "title": "Poe",
-            "desc": "一系列官方机器人和用户专属机器人，涵盖了从编程、数据分析、图像生成到教学规划等多个领域的应用，以及对应的技术支持和使用限制。",
-            "icon": "https://psc2.cf2.poecdn.net/assets/apple-touch-icon.png",
-            "key": "AI 集合",
-            "vpn": true
-        },
-        {
-            "url": "https://www.deepl.com/",
-            "title": "DeepL",
-            "desc": "全球准确率最高的翻译服务网站。",
-            "icon": "https://static.deepl.com/img/favicon/favicon_32.png",
-            "key": "机器翻译"
-        }
-    ],
-    "享受": [
-        {
-            "url": "https://www.btnull.org/",
-            "title": "BTNULL",
-            "desc": "综合的影视动漫资讯和推荐网站。",
-            "icon": "https://www.btnull.org/favicon.ico",
-            "key": "在线电影"
-        },
-        {
-            "url": "https://subhd.tv/",
-            "title": "SubHD",
-            "desc": "专注于为电影和电视剧提供分享、交流及多语言字幕下载服务。",
-            "icon": "https://img.huo720.com/favicon-32x32.png",
-            "key": "字幕下载"
-        },
-        {
-            "url": "https://www.gequbao.com/",
-            "title": "歌曲宝",
-            "desc": "MP3 音乐高品质在线免费下载的平台",
-            "icon": "https://www.gequbao.com/favicon.ico",
-            "key": "在线音乐"
-        }
-    ]
-}
+[
+    {
+        "搜集": [
+            {
+                "AIGC": [
+                    {
+                        "url": "https://chatgpt.com/",
+                        "icon": "./images/icon/chatgpt.ico",
+                        "title": "ChatGPT",
+                        "desc": "大语言模型的领先者",
+                        "key": "语言模型",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://gemini.google.com/",
+                        "icon": "./images/icon/gemini.ico",
+                        "title": "Gemini",
+                        "desc": "Google 的聊天机器人",
+                        "key": "语言模型",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://claude.ai/",
+                        "icon": "./images/icon/claude.ico",
+                        "title": "Claude",
+                        "desc": "ChatGPT 的竞争对手",
+                        "key": "语言模型",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://copilot.microsoft.com/",
+                        "icon": "./images/icon/copilot.ico",
+                        "title": "Copilot",
+                        "desc": "微软的免费 GPT-4",
+                        "key": "语言模型",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://poe.com/",
+                        "icon": "./images/icon/poe.ico",
+                        "title": "Poe",
+                        "desc": "聊天机器人的集合",
+                        "key": "语言模型",
+                        "vpn": true
+                    }
+                ]
+            },
+            {
+                "搜索": [
+                    {
+                        "url": "https://www.google.com/",
+                        "icon": "./images/icon/google.ico",
+                        "title": "Google",
+                        "desc": "全球最大的搜索引擎",
+                        "key": "搜索引擎",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://www.bing.com/",
+                        "icon": "./images/icon/bing.ico",
+                        "title": "Bing",
+                        "desc": "微软必应搜索",
+                        "key": "搜索引擎",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://duckduckgo.com/",
+                        "icon": "./images/icon/duckduckgo.ico",
+                        "title": "DuckDuckGo",
+                        "desc": "保护隐私的搜索引擎",
+                        "key": "搜索引擎",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://yandex.com/",
+                        "icon": "./images/icon/yandex.ico",
+                        "title": "Yandex",
+                        "desc": "俄罗斯最大的搜索引擎",
+                        "key": "搜索引擎",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://www.perplexity.ai/",
+                        "icon": "./images/icon/perplexity.ico",
+                        "title": "Perplexity",
+                        "desc": "AI 搜索引擎",
+                        "key": "搜索引擎",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://www.wolframalpha.com/",
+                        "icon": "./images/icon/wolframAlpha.ico",
+                        "title": "Wolframalpha",
+                        "desc": "计算知识引擎",
+                        "key": "搜索引擎",
+                        "vpn": true
+                    }
+                ]
+            },
+            {
+                "材料": [
+                    {
+                        "url": "https://chatgpt.com/",
+                        "icon": "./images/icon/gemini.ico",
+                        "title": "ChatGPT",
+                        "desc": "大语言模型的领先者",
+                        "key": "语言模型",
+                        "vpn": true
+                    }
+                ]
+            },
+            {
+                "百科": [
+                    {
+                        "url": "https://www.wikipedia.org/",
+                        "icon": "./images/icon/wikipedia.ico",
+                        "title": "维基百科",
+                        "desc": "自由的百科",
+                        "key": "百科全书",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://zh.wikihow.com/",
+                        "icon": "./images/icon/wikihow.ico",
+                        "title": "wikiHow",
+                        "desc": "在线万事指南",
+                        "key": "百科全书",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://emojipedia.org/zh",
+                        "icon": "./images/icon/emojipedia.ico",
+                        "title": "Emojipedia",
+                        "desc": "表情图标百科",
+                        "key": "百科全书",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://exrx.net/",
+                        "icon": "./images/icon/exrx.ico",
+                        "title": "ExRx",
+                        "desc": "健身百科",
+                        "key": "百科全书",
+                        "vpn": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "生产": [
+            {
+                "文档": [
+                    {
+                        "url": "https://www.office.com/",
+                        "icon": "./images/icon/office.ico",
+                        "title": "Office",
+                        "desc": "在线 Office",
+                        "key": "在线工具",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://www.canva.com/",
+                        "icon": "./images/icon/canva.ico",
+                        "title": "Canva",
+                        "desc": "可画，在线设计工具",
+                        "key": "在线工具",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://www.ilovepdf.com/zh-cn",
+                        "icon": "./images/icon/ilovepdf.ico",
+                        "title": "iLovePDF",
+                        "desc": "PDF爱好者的在线工具",
+                        "key": "在线工具",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://vscode.dev/",
+                        "icon": "./images/icon/vscode.ico",
+                        "title": "Visual Studio Code",
+                        "desc": "VSCode 在线版",
+                        "key": "在线工具",
+                        "vpn": true
+                    }
+                ]
+            },
+            {
+                "图片": [
+                    {
+                        "url": "https://www.remove.bg/zh",
+                        "icon": "./images/icon/remove-bg.ico",
+                        "title": "Remove.bg",
+                        "desc": "图片背景消除",
+                        "key": "背景消除",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://www.iloveimg.com/zh-cn",
+                        "icon": "./images/icon/iloveimg.ico",
+                        "title": "iLoveIMG",
+                        "desc": "在线图片编辑器",
+                        "key": "图片编辑",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://www.xiconeditor.com/",
+                        "icon": "./images/icon/xiconeditor.ico",
+                        "title": "X-icon Editor",
+                        "desc": "icon 图标编辑器",
+                        "key": "图片编辑",
+                        "vpn": true
+                    }
+                ]
+            },
+            {
+                "音频": [
+                    {
+                        "url": "https://chatgpt.com/",
+                        "icon": "./images/icon/gemini.ico",
+                        "title": "ChatGPT",
+                        "desc": "大语言模型的领先者",
+                        "key": "语言模型",
+                        "vpn": true
+                    }
+                ]
+            },
+            {
+                "视频": [
+                    {
+                        "url": "https://www.capcut.com/editor",
+                        "icon": "./images/icon/capcut.ico",
+                        "title": "CapCut",
+                        "desc": "剪印国际版在线视频剪辑工具",
+                        "key": "视频剪辑",
+                        "vpn": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "提升": [
+            {
+                "语言": [
+                    {
+                        "url": "https://www.duolingo.com/",
+                        "icon": "./images/icon/duolingo.ico",
+                        "title": "多邻国",
+                        "desc": "领先的外语学习网站",
+                        "key": "语言模型",
+                        "vpn": true
+                    }
+                ]
+            },
+            {
+                "技能": [
+                    {
+                        "url": "https://chatgpt.com/",
+                        "icon": "./images/icon/gemini.ico",
+                        "title": "ChatGPT",
+                        "desc": "大语言模型的领先者",
+                        "key": "语言模型",
+                        "vpn": true
+                    }
+                ]
+            },
+            {
+                "工具": [
+                    {
+                        "url": "https://www.ilovepdf.com/zh-cn",
+                        "icon": "./images/icon/ilovepdf.ico",
+                        "title": "iLovePDF",
+                        "desc": "PDF爱好者的在线工具",
+                        "key": "在线工具",
+                        "vpn": true
+                    }
+                ]
+            },
+            {
+                "分析": [
+                    {
+                        "url": "https://chatgpt.com/",
+                        "icon": "./images/icon/gemini.ico",
+                        "title": "ChatGPT",
+                        "desc": "大语言模型的领先者",
+                        "key": "语言模型",
+                        "vpn": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "享受": [
+            {
+                "文学": [
+                    {
+                        "url": "https://chatgpt.com/",
+                        "icon": "./images/icon/gemini.ico",
+                        "title": "ChatGPT",
+                        "desc": "大语言模型的领先者",
+                        "key": "语言模型",
+                        "vpn": true
+                    }
+                ]
+            },
+            {
+                "动漫": [
+                    {
+                        "url": "https://chatgpt.com/",
+                        "icon": "./images/icon/gemini.ico",
+                        "title": "ChatGPT",
+                        "desc": "大语言模型的领先者",
+                        "key": "语言模型",
+                        "vpn": true
+                    }
+                ]
+            },
+            {
+                "音乐": [
+                    {
+                        "url": "https://chatgpt.com/",
+                        "icon": "./images/icon/gemini.ico",
+                        "title": "ChatGPT",
+                        "desc": "大语言模型的领先者",
+                        "key": "语言模型",
+                        "vpn": true
+                    }
+                ]
+            },
+            {
+                "影视": [
+                    {
+                        "url": "https://chatgpt.com/",
+                        "icon": "./images/icon/gemini.ico",
+                        "title": "ChatGPT",
+                        "desc": "大语言模型的领先者",
+                        "key": "语言模型",
+                        "vpn": true
+                    }
+                ]
+            }
+        ]
+    }
+]

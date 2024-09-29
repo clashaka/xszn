@@ -4,72 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>搜索建议示例</title>
-    <style>
-        #suggestions {
-            border: 1px solid #ccc;
-            display: none;
-            position: absolute;
-            background: white;
-            max-height: 150px;
-            overflow-y: auto;
-        }
-
-        .suggestion {
-            padding: 8px;
-            cursor: pointer;
-        }
-
-        .suggestion:hover {
-            background: #f0f0f0;
-        }
-    </style>
+    <title>Document</title>
 </head>
 
 <body>
-
-    <input type="text" id="search" placeholder="搜索...">
-    <div id="suggestions"></div>
-
     <script>
-        const data = ["Apple", "Banana", "Cherry", "Date", "Fig", "Grape", "Honeydew"];
-        const searchInput = document.getElementById('search');
-        const suggestionsContainer = document.getElementById('suggestions');
-
-        searchInput.addEventListener('input', () => {
-            const query = searchInput.value.toLowerCase();
-            suggestionsContainer.innerHTML = '';
-
-            if (query) {
-                const filteredData = data.filter(item => item.toLowerCase().includes(query));
-                if (filteredData.length > 0) {
-                    suggestionsContainer.style.display = 'block';
-                    filteredData.forEach(item => {
-                        const suggestionDiv = document.createElement('div');
-                        suggestionDiv.textContent = item;
-                        suggestionDiv.classList.add('suggestion');
-                        suggestionDiv.onclick = () => {
-                            searchInput.value = item;
-                            suggestionsContainer.style.display = 'none';
-                        };
-                        suggestionsContainer.appendChild(suggestionDiv);
-                    });
-                } else {
-                    suggestionsContainer.style.display = 'none';
-                }
-            } else {
-                suggestionsContainer.style.display = 'none';
-            }
-        });
-
-        // 点击空白区域关闭建议
-        document.addEventListener('click', (event) => {
-            if (!searchInput.contains(event.target)) {
-                suggestionsContainer.style.display = 'none';
-            }
-        });
+        async function test() {
+            const res = await fetch('https://pro.similarweb.com/api/WebsiteOverview/getsimilarsites?key=canva.com')
+            const text = await res.json()
+            console.log(res)
+        }
+        test()
     </script>
-
 </body>
 
 </html>

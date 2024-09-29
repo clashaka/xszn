@@ -1,3 +1,33 @@
+.tabs ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: inherit;
+    padding: unset;
+}
+
+.tabs li {
+    cursor: pointer;
+    border: 1.5px solid var(--border-color);
+    padding: 8px 16px 8px 16px;
+    border-radius: 32px;
+    transition: all .3s ease-in-out;
+}
+
+.tabs li:hover:not(.active) {
+    background-color: var(--border-color);
+}
+
+.tabs .active {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.tabpanel {
+    display: none;
+    padding-top: 16px;
+}
+
 .tab-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -12,5 +42,10 @@
 @media screen and (min-width: 768px) {
     .tab-content {
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+
+    .tabs ul {
+        justify-content: inherit;
+        gap: 16px;
     }
 }
