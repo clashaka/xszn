@@ -204,6 +204,14 @@
                         "vpn": true
                     },
                     {
+                        "url": "https://app.diagrams.net/",
+                        "icon": "./images/icon/diagrams.ico",
+                        "title": "draw.io",
+                        "desc": "专业的图表工具",
+                        "key": "图表设计",
+                        "vpn": true
+                    },
+                    {
                         "url": "https://www.xiconeditor.com/",
                         "icon": "./images/icon/xiconeditor.ico",
                         "title": "X-icon Editor",
@@ -234,6 +242,14 @@
                         "desc": "剪印国际版在线视频剪辑工具",
                         "key": "视频剪辑",
                         "vpn": true
+                    },
+                    {
+                        "url": "https://clipchamp.com/zh-hans/",
+                        "icon": "./images/icon/clipchamp.ico",
+                        "title": "Clipchamp",
+                        "desc": "微软出品的视频剪辑工具",
+                        "key": "视频剪辑",
+                        "vpn": true
                     }
                 ]
             }
@@ -244,11 +260,27 @@
             {
                 "语言": [
                     {
+                        "url": "https://www.deepl.com/",
+                        "icon": "./images/icon/deepl.ico",
+                        "title": "DeepL",
+                        "desc": "号称最精确的机器翻译",
+                        "key": "机器翻译",
+                        "vpn": true
+                    },
+                    {
                         "url": "https://www.duolingo.com/",
                         "icon": "./images/icon/duolingo.ico",
                         "title": "多邻国",
                         "desc": "领先的外语学习网站",
-                        "key": "语言模型",
+                        "key": "外语学习",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://quizlet.com/",
+                        "icon": "./images/icon/quizlet.ico",
+                        "title": "Quizlet",
+                        "desc": "互动式单词卡学习",
+                        "key": "外语学习",
                         "vpn": true
                     }
                 ]
@@ -256,11 +288,19 @@
             {
                 "技能": [
                     {
-                        "url": "https://chatgpt.com/",
-                        "icon": "./images/icon/gemini.ico",
-                        "title": "ChatGPT",
-                        "desc": "大语言模型的领先者",
-                        "key": "语言模型",
+                        "url": "https://zh.khanacademy.org/",
+                        "icon": "./images/icon/khanacademy.ico",
+                        "title": "可汗学院",
+                        "desc": "全球免费的一流教育资源",
+                        "key": "教育资源",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://developer.mozilla.org/",
+                        "icon": "./images/icon/mdn.ico",
+                        "title": "MDN",
+                        "desc": "权威 Web 开发教程文档",
+                        "key": "编程文档",
                         "vpn": true
                     }
                 ]
@@ -268,11 +308,19 @@
             {
                 "工具": [
                     {
-                        "url": "https://www.ilovepdf.com/zh-cn",
-                        "icon": "./images/icon/ilovepdf.ico",
-                        "title": "iLovePDF",
-                        "desc": "PDF爱好者的在线工具",
-                        "key": "在线工具",
+                        "url": "https://ankiweb.net/",
+                        "icon": "./images/icon/ankiweb.ico",
+                        "title": "AnkiWeb",
+                        "desc": "Anki 网页版",
+                        "key": "外语学习",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://ygpy.net/",
+                        "icon": "./images/icon/ygpy.ico",
+                        "title": "一个朋友",
+                        "desc": "一个免费 VPN 机场推荐网站",
+                        "key": "VPN 推荐",
                         "vpn": true
                     }
                 ]
@@ -280,11 +328,27 @@
             {
                 "分析": [
                     {
-                        "url": "https://chatgpt.com/",
-                        "icon": "./images/icon/gemini.ico",
-                        "title": "ChatGPT",
-                        "desc": "大语言模型的领先者",
-                        "key": "语言模型",
+                        "url": "https://www.similarweb.com/zh/",
+                        "icon": "./images/icon/similarweb.ico",
+                        "title": "Similarweb",
+                        "desc": "分析任何网站流量",
+                        "key": "网站分析",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://trends.google.com/",
+                        "icon": "./images/icon/google-trends.ico",
+                        "title": "Google 趋势",
+                        "desc": "全球搜索趋势的洞察",
+                        "key": "搜索分析",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://www.tiobe.com/tiobe-index/",
+                        "icon": "./images/icon/tiobe-index.ico",
+                        "title": "Tiobe Index",
+                        "desc": "编程语言排名",
+                        "key": "排行榜",
                         "vpn": true
                     }
                 ]
@@ -320,11 +384,19 @@
             {
                 "音乐": [
                     {
-                        "url": "https://chatgpt.com/",
-                        "icon": "./images/icon/gemini.ico",
-                        "title": "ChatGPT",
-                        "desc": "大语言模型的领先者",
-                        "key": "语言模型",
+                        "url": "https://hifini.com/",
+                        "icon": "./images/icon/hifini.ico",
+                        "title": "HiFiNi",
+                        "desc": "没有你找不到的音乐？",
+                        "key": "在线音乐",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://www.gequbao.com/",
+                        "icon": "./images/icon/gequbao.ico",
+                        "title": "歌曲宝",
+                        "desc": "一个在线歌曲库",
+                        "key": "在线音乐",
                         "vpn": true
                     }
                 ]
@@ -332,11 +404,11 @@
             {
                 "影视": [
                     {
-                        "url": "https://chatgpt.com/",
-                        "icon": "./images/icon/gemini.ico",
-                        "title": "ChatGPT",
-                        "desc": "大语言模型的领先者",
-                        "key": "语言模型",
+                        "url": "https://www.gying.net/",
+                        "icon": "./images/icon/gying.ico",
+                        "title": "观影",
+                        "desc": "所有电影的集合",
+                        "key": "在线电影",
                         "vpn": true
                     }
                 ]
