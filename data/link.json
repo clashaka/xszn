@@ -100,11 +100,11 @@
             {
                 "材料": [
                     {
-                        "url": "https://chatgpt.com/",
-                        "icon": "./images/icon/gemini.ico",
-                        "title": "ChatGPT",
-                        "desc": "大语言模型的领先者",
-                        "key": "语言模型",
+                        "url": "https://zh.singlelogin.re/",
+                        "icon": "./images/icon/z-library.ico",
+                        "title": "Z-Library",
+                        "desc": "世界上最大的电子图书馆",
+                        "key": "书籍下载",
                         "vpn": true
                     }
                 ]
@@ -224,11 +224,11 @@
             {
                 "音频": [
                     {
-                        "url": "https://chatgpt.com/",
-                        "icon": "./images/icon/gemini.ico",
-                        "title": "ChatGPT",
-                        "desc": "大语言模型的领先者",
-                        "key": "语言模型",
+                        "url": "https://chattts.com/",
+                        "icon": "./images/icon/chattts.ico",
+                        "title": "ChatTTS",
+                        "desc": "用于对话场景的文本转语音",
+                        "key": "文本转语音",
                         "vpn": true
                     }
                 ]
@@ -308,6 +308,22 @@
             {
                 "工具": [
                     {
+                        "url": "https://temp-mail.org/",
+                        "icon": "./images/icon/temp-mail.ico",
+                        "title": "Temp Mail",
+                        "desc": "临时邮箱",
+                        "key": "电子邮箱",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://whatismyipaddress.com/zh-cn/index",
+                        "icon": "./images/icon/whatismyipaddress.ico",
+                        "title": "我的 IP",
+                        "desc": "在线查看 IP 地址",
+                        "key": "网络工具",
+                        "vpn": true
+                    },
+                    {
                         "url": "https://ankiweb.net/",
                         "icon": "./images/icon/ankiweb.ico",
                         "title": "AnkiWeb",
@@ -327,6 +343,22 @@
             },
             {
                 "分析": [
+                    {
+                        "url": "https://www.speedtest.net/",
+                        "icon": "./images/icon/speedtest.ico",
+                        "title": "Speedtest",
+                        "desc": "测试互联网连接速度",
+                        "key": "网速测试",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://fast.com/",
+                        "icon": "./images/icon/fast.ico",
+                        "title": "Fast",
+                        "desc": "奈飞的网速测试",
+                        "key": "网速测试",
+                        "vpn": true
+                    },
                     {
                         "url": "https://www.similarweb.com/zh/",
                         "icon": "./images/icon/similarweb.ico",
@@ -350,6 +382,14 @@
                         "desc": "编程语言排名",
                         "key": "排行榜",
                         "vpn": true
+                    },
+                    {
+                        "url": "https://bestofjs.org/",
+                        "icon": "./images/icon/bestofjs.ico",
+                        "title": "Best of JS",
+                        "desc": "Web 最佳开源项目的平台",
+                        "key": "排行榜",
+                        "vpn": true
                     }
                 ]
             }
@@ -360,11 +400,27 @@
             {
                 "文学": [
                     {
-                        "url": "https://chatgpt.com/",
-                        "icon": "./images/icon/gemini.ico",
-                        "title": "ChatGPT",
-                        "desc": "大语言模型的领先者",
-                        "key": "语言模型",
+                        "url": "https://69shuba.cx/",
+                        "icon": "./images/icon/69shuba.ico",
+                        "title": "69 书吧",
+                        "desc": "最新小说更新、无弹窗广告的在线小说阅读平台",
+                        "key": "小说阅读",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://www.bqg9527.cc/",
+                        "icon": "./images/icon/bqg.ico",
+                        "title": "笔趣阁",
+                        "desc": "多种类型网络小说阅读和最新更新的在线文学平台",
+                        "key": "小说阅读",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://www.52shuku.vip/",
+                        "icon": "./images/icon/52shuku.ico",
+                        "title": "52 书库",
+                        "desc": "多种热门小说分类的推荐",
+                        "key": "小说阅读",
                         "vpn": true
                     }
                 ]
@@ -372,11 +428,11 @@
             {
                 "动漫": [
                     {
-                        "url": "https://chatgpt.com/",
-                        "icon": "./images/icon/gemini.ico",
-                        "title": "ChatGPT",
-                        "desc": "大语言模型的领先者",
-                        "key": "语言模型",
+                        "url": "https://www.manhuagui.com/",
+                        "icon": "./images/icon/manhuagui.ico",
+                        "title": "漫画柜",
+                        "desc": "综合性的在线漫画阅读平台",
+                        "key": "漫画阅读",
                         "vpn": true
                     }
                 ]
@@ -403,6 +459,30 @@
             },
             {
                 "影视": [
+                    {
+                        "url": "https://www.youtube.com/",
+                        "icon": "./images/icon/youtube.ico",
+                        "title": "YouTube",
+                        "desc": "YouTube，俗称油管",
+                        "key": "在线视频",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://www.tiktok.com/",
+                        "icon": "./images/icon/tiktok.ico",
+                        "title": "TikTok",
+                        "desc": "国际版抖音",
+                        "key": "短视频",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://missav.com/dm10/cn",
+                        "icon": "./images/icon/missav.ico",
+                        "title": "MissAV",
+                        "desc": "免费高清日本 AV 在线看",
+                        "key": "成人视频",
+                        "vpn": true
+                    },
                     {
                         "url": "https://www.gying.net/",
                         "icon": "./images/icon/gying.ico",

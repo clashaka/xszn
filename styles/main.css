@@ -59,6 +59,9 @@ body {
 
 main {
     padding: 0 16px 0 16px;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 main .tabs {

@@ -3,9 +3,28 @@ export default async function tab() {
     const response = await fetch('./data/link.json');
     const link = await response.json();
     const tabs = document.querySelectorAll('.tabs');
+    // 存放“全部”Tab的数据
+    let arr = []
 
     tabs.forEach((element, index) => {
-
+        if (index < 1) {
+            tabActive()
+            const tabContent = element.querySelector('.tab-content');
+            for (const value of link) {
+                for (const key in value) {
+                    for (const item of value[key]) {
+                        for (const key in item) {
+                            for (const value of item[key]) {
+                                arr.push(creCard(value));
+                                if (arr.length <= 16) {
+                                    tabContent.appendChild(creCard(value));
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         // 创建 tabpanel
         if (index > 0) {
             const ul = document.createElement('ul');
@@ -23,30 +42,37 @@ export default async function tab() {
                         element.appendChild(tabPanel);
                         tabPanel.appendChild(tabContent);
                         for (const item of value[key]) {
-                            const a = document.createElement('a');
-                            a.href = item.url;
-                            a.target = '_blank';
-                            a.innerHTML = `
-                            <div class="card">
-                                <figure class="card-head">
-                                    <div class="card-icon">
-                                        <img src="${item.icon}" alt="${item.title}" width="43">
-                                    </div>
-                                    <figcaption>
-                                        <h3>${item.title}</h3>
-                                        <small>${item.key}</small>
-                                    </figcaption>
-                                </figure>
-                                <div class="card-body">
-                                    <small>${item.desc}</small>
-                                </div>
-                            </div>
-                            `;
-                            tabContent.appendChild(a);
+                            tabContent.appendChild(creCard(item));
                         }
                     }
                 }
             }
+            tabActive();
+        }
+        //创建卡片函数
+        function creCard(value) {
+            const a = document.createElement('a');
+            a.href = value.url;
+            a.target = '_blank';
+            a.innerHTML = `
+            <div class="card">
+                <figure class="card-head">
+                    <div class="card-icon">
+                        <img src="${value.icon}" alt="${value.title}" width="43">
+                    </div>
+                    <figcaption>
+                        <h3>${value.title}</h3>
+                        <small>${value.key}</small>
+                    </figcaption>
+                </figure>
+                <div class="card-body">
+                    <small>${value.desc}</small>
+                </div>
+            </div>
+            `;
+            return a;
+        }
+        function tabActive() {
             const lis = element.querySelectorAll('li');
             const tabpanels = element.querySelectorAll('.tabpanel');
 

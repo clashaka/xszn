@@ -3,3 +3,15 @@ footer {
     text-align: center;
     color: gray;
 }
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
