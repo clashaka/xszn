@@ -89,7 +89,7 @@
                     },
                     {
                         "url": "https://www.wolframalpha.com/",
-                        "icon": "./images/icon/wolframAlpha.ico",
+                        "icon": "./images/icon/wolframalpha.ico",
                         "title": "Wolframalpha",
                         "desc": "计算知识引擎",
                         "key": "搜索引擎",
