@@ -16,9 +16,9 @@ export default async function tab() {
                         for (const key in item) {
                             for (const value of item[key]) {
                                 arr.push(creCard(value));
-                                if (arr.length <= 16) {
-                                    tabContent.appendChild(creCard(value));
-                                }
+                                // if (arr.length <= 16) {
+                                //     tabContent.appendChild(creCard(value));
+                                // }
                             }
                         }
                     }
@@ -94,4 +94,13 @@ export default async function tab() {
             })
         }
     })
+
+    // 随机抽取16个卡片
+    const tabContent = document.querySelector('.tab-content');
+
+    for (let i = 0; i < 16; i++) {
+        const random = Math.floor(Math.random() * arr.length);
+        tabContent.appendChild(arr[random]);
+        arr.splice(random, 1);
+    }
 }
