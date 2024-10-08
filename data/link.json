@@ -106,6 +106,22 @@
                         "desc": "世界上最大的电子图书馆",
                         "key": "书籍下载",
                         "vpn": true
+                    },
+                    {
+                        "url": "https://www.gamer520.com/",
+                        "icon": "./images/icon/gamer520.ico",
+                        "title": "Switch 520",
+                        "desc": "PC 和 Switch 平台的游戏下载",
+                        "key": "游戏下载",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://www.oldmantvg.net/",
+                        "icon": "./images/icon/oldmantvg.ico",
+                        "title": "老男人游戏网",
+                        "desc": "免费下载的大规模游戏资源平台",
+                        "key": "游戏下载",
+                        "vpn": true
                     }
                 ]
             },

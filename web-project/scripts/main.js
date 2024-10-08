@@ -29,7 +29,7 @@ similarity.addEventListener('click', e => {
 
 async function fetchData(domain) {
     try {
-        const res = await fetch(`https://data.similarweb.com/api/v1/data?domain=${domain}`);
+        const res = await fetch(`https://cors-anywhere-git-xajeh69693-dev.apps.sandbox-m3.1530.p1.openshiftapps.com/https://data.similarweb.com/api/v1/data?domain=${domain}`);
         const data = await res.json();
         showData(data);
     } catch (error) {
