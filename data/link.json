@@ -122,6 +122,14 @@
                         "desc": "免费下载的大规模游戏资源平台",
                         "key": "游戏下载",
                         "vpn": true
+                    },
+                    {
+                        "url": "https://fonts.bunny.net/",
+                        "icon": "./images/icon/bunny-fonts.ico",
+                        "title": "Bunny Fonts",
+                        "desc": "一个快速且符合 GDPR 的字体资源库",
+                        "key": "字体下载",
+                        "vpn": true
                     }
                 ]
             },
@@ -157,6 +165,14 @@
                         "title": "ExRx",
                         "desc": "健身百科",
                         "key": "百科全书",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://acorn.firefox.com/",
+                        "icon": "./images/icon/acorn.ico",
+                        "title": "Acorn",
+                        "desc": "Acorn 是 Firefox 的设计系统",
+                        "key": "UI 设计",
                         "vpn": true
                     }
                 ]
@@ -337,6 +353,14 @@
                         "title": "我的 IP",
                         "desc": "在线查看 IP 地址",
                         "key": "网络工具",
+                        "vpn": true
+                    },
+                    {
+                        "url": "https://dnschecker.org/",
+                        "icon": "./images/icon/dns-checker.ico",
+                        "title": "DNS Checker",
+                        "desc": "一个免费的 DNS 传播检查服务",
+                        "key": "在线工具",
                         "vpn": true
                     },
                     {
