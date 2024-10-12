@@ -38,7 +38,6 @@ function search() {
             input.focus();
         }
     });
-
 };
 
 export { search };

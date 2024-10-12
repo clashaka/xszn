@@ -1,54 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>使用JavaScript实现中文搜索建议</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-
-  <input type="text" id="search">
-
-  <div id="suggestions"></div>
-
-  <script>
-    // 搜索建议数据
-    const suggestions = [
-      'JavaScript', 
-      'HTML', 
-      '奇虎360',
-      '字节跳动',
-      '网易游戏',
-      '搜狐新闻',
-      '腾讯视频'
-    ];
-
-    // 输入框获取焦点时清空建议
-    document.getElementById('search').onfocus = function() {
-      document.getElementById('suggestions').innerHTML = '';
-    }
-
-    // 输入时匹配建议
-    document.getElementById('search').onkeyup = function() {
-      var value = this.value;
-      var matches = [];
-
-      // 使用正则表达式匹配中文
-      var reg = new RegExp(value, 'gi');  
-
-      // 过滤匹配项
-      matches = suggestions.filter(item => {
-        return reg.test(item);
-      });
-
-      // 渲染匹配结果
-      var html = '';
-      matches.forEach(match => {
-        html += '<div>' + match + '</div>';
-      });
-
-      document.getElementById('suggestions').innerHTML = html;
-    }
-  </script>
-
+  <img src='./images/logo.webp' alt="">
 </body>
+
 </html>

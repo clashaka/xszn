@@ -168,6 +168,14 @@
                         "vpn": true
                     },
                     {
+                        "url": "https://www.aishort.top/",
+                        "icon": "./images/icon/aishort.ico",
+                        "title": "AiShort",
+                        "desc": "简单易用的 AI 快捷指令集 ",
+                        "key": "提示词大全",
+                        "vpn": true
+                    },
+                    {
                         "url": "https://acorn.firefox.com/",
                         "icon": "./images/icon/acorn.ico",
                         "title": "Acorn",

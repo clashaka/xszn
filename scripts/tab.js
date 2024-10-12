@@ -98,7 +98,7 @@ export default async function tab() {
     // 随机抽取16个卡片
     const tabContent = document.querySelector('.tab-content');
 
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 36; i++) {
         const random = Math.floor(Math.random() * arr.length);
         tabContent.appendChild(arr[random]);
         arr.splice(random, 1);
