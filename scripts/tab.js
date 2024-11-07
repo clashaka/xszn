@@ -16,9 +16,6 @@ export default async function tab() {
                         for (const key in item) {
                             for (const value of item[key]) {
                                 arr.push(creCard(value));
-                                // if (arr.length <= 16) {
-                                //     tabContent.appendChild(creCard(value));
-                                // }
                             }
                         }
                     }

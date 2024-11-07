@@ -9,8 +9,10 @@ export default () => {
         for (const obj of link) {
             for (const key in obj) {
                 const li = document.createElement('li');
-                li.textContent = key;
+                const h2 = document.createElement('h2');
+                h2.textContent = key;
                 ul.appendChild(li);
+                li.appendChild(h2);
             }
         }
 

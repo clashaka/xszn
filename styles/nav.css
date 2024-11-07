@@ -30,7 +30,6 @@ nav ul {
 }
 
 nav li {
-    font-size: 24px;
     padding-bottom: 8px;
     width: 100%;
     text-align: center;
@@ -46,10 +45,18 @@ nav li:nth-child(1) {
     border-bottom: 5px solid var(--text-color);
 }
 
+nav h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
 @media screen and (min-width: 768px) {
     nav li {
-        font-size: 32px;
         width: inherit;
+    }
+
+    nav h2 {
+        font-size: 32px;
     }
 
     nav ul {
